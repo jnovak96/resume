@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape John W. Novak} \\ \vspace{3pt}
+    \small \faIcon{phone-square-alt} (484) 619-1783 $|$ \href{mailto:johnwnovak1@gmail.com}{\faIcon{envelope} \text{johnwnovak1@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/johnnovaktu/}{\faIcon{linkedin} \text{johnnovaktu}} $|$
+    \href{https://github.com/jnovak96}{\faIcon{github} \text{jnovak96}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Software Developer}{November 2022 -- Present}
+        {B Braun Medical Inc. -- R\&D Active Devices}{Allentown, PA}
+        \resumeItemListStart
+          \resumeItem{Developed a software application for tracking and monitoring an automated IV pumps on an enterprise scale, significantly alleviating workload of nurses and hospital staff, using .NET, Angular, Microsoft SQL Server.}
+          \resumeItem{Significantly improved code quality of application and unit test coverage.}
+          \resumeItem{Was one of 2 developers tasked with building a web application to fully simulate real IV pump hardware and interface with main application.}
+          \resumeItem{Item 4}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer - Contractor}{February 2022 -- October 2022}
+      {Barnegat Bay Capital Management}{Summit, NJ}
+      \resumeItemListStart
+        \resumeItem{Worked with owner to develop solutions to significantly speed up and automate financial analytical processes.}
+.       \resumeItem{Developed software solutions in Python to and interface with financial APIs to provide performance metrics on hundreds of small to large cap ETFs.}
+        \resumeItem{Significantly improved client's Microsoft Excel workflow by providing custom VBA macros to automate various mathematical and formatting requirements.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Freelance Web Developer}{January 2022 -- Present}
+      {Various Clients}{Bethlehem, PA}
+      \resumeItemListStart
+        \resumeItem{Added new functionality to existing websites such as file uploading, comment section, and user login functionality.}
+        \resumeItem{Utilized PostgreSQL and MySQL databases with over 5000 data entries and handled database processes with secure and efficient back-end code.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{AI Deep Learning Face Mask Detector} $|$ \emph{Python, PyTorch, Pandas, Numpy}}{April 2021 -- June 2021}
+          \resumeItemListStart
+            \resumeItem{Built a program that uses deep learning technology capable of discerning images where N95 masks are being worn on a human face against images of faces without masks with over 90\% accuracy.}
+            \resumeItem{Written in Python using PyTorch convolutional neural network trained with a public dataset of over 4000 images.}
+            \resumeItem{Tweaked neural network architecture over time by optimizing layers, transforms and kernel size to improve results.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{URP/SSP Student Research Success Tracker} $|$ \emph{ASP.Net, C\#, MySQL, JQuery}}{November 2020 -- April 2021}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a team to write a web application to automate about 80\% of school research tracking workload.}
+            \resumeItem{Handled thousands of research projects, students, and PIs on a relational SQL database using secure and well-tested stored procedures and back-end C\# code.}
+            \resumeItem{Built a custom comment system, file upload system, and user login with multiple user types and session handling.}
+            \resumeItem{Provided code and detailed documentation on over 50 custom API functions.}
+            \resumeItem{Worked in an agile environment with scrums, progress reports, and requirement documentation.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\textbf{Custom Feature-Rich Shell/Command Line} $|$ \emph{C, Linux, gcc, gdb}}{September 2018 -- January 2019}
+          \resumeItemListStart
+            \resumeItem{Programmed a Unix shell / command line in C that uses the GNU / Linux glibc library for filesystem functions.}
+            \resumeItem{Was capable of changing directories, copying files, executing processes with multithreading, and piping process outputs}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, Python, C/C++, Java, SQL (PostgreSQL/MySQL), JavaScript, PHP, XML, JSON, HTML/CSS} \\
+     \textbf{Frameworks}{: ASP.Net, Spring, Angular, React, Node.js, JQuery, Bootstrap} \\
+     \textbf{Developer Tools}{: Git, Docker, Visual Studio, Microsoft Azure, PyCharm, Linux CL, Vim, gcc, gdb} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, PyTorch, OpenCV, OpenGL, glibc}
+    }}
+ \end{itemize}
+
+ 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Temple University}{Philadelphia, PA}
+      {Bachelor of Science in Information Science and Technology, Minor in Computer Science}{Graduated Dec 2021}
+  \resumeSubHeadingListEnd
+
+
+
+% %-------------------------------------------
+% \section{Interests}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{Robotics, Arduino, Linux, video game emulation, 3D graphics programming, machine learning } \\
+%     }
+%  \end{itemize}
+\end{document}
